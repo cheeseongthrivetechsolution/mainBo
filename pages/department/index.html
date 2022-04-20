@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <title class="translation" key="profile_title"></title>
+  <link href="../../assets/css/common.css" rel="stylesheet" >
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+  <link href="../../assets/css/bootstrap-table.min.css" rel="stylesheet" />
+  <link href="../../assets/css/perfect-scrollbar.css" rel="stylesheet" />
+  <script src="../../assets/js/fontawesome.js"></script>
+  <script src="../../assets/js/fontawesome.js"></script>
+  <script src="../../assets/js/jquery.js"></script>
+  <script type="text/javascript" language="javascript" src="../../assets/js/bootstrap-table-jquery.min.js"></script>
+</head>
+<body>
+  <div class="bg-light">
+    <div class="mx-3 p-2">
+      <div class="page-header">
+        <h4 class="translation fw-bold" key="department_title"></h4>
+      </div>
+    </div>
+  </div>
+  <div class="m-3 bg-light rounded-3 ">
+    <div class="row g-3 m-3">
+      <div class="col-md-4 form-group">
+        <input type="text" class="form-control translation" placeholder="" key="department_name" id="name" autocomplete="off">
+      </div>
+      <div class="col-md-2 form-group">
+        <select id="gender" class="form-select">
+          <option selected class="translation" key="department_status"></option>
+          <option value="1" class="translation" key="select_active"></option>
+          <option value="2" class="translation" key="select_deactive"></option>
+          <option value="0" class="translation" key="select_deleted"></option>
+        </select>
+      </div>
+      <div class="d-flex justify-content-between bd-highlight mb-3">
+        <div class="p-2 bd-highlight">
+          <button id="clearSearchBtn" class="btn btn-outline-danger m-1">
+            <i class="fas fa-spinner fa-spin d-none"></i>
+            <i class="fa fa-remove "></i>
+            <span class="translation" key="btn_reset"></span>
+          </button>
+          <button id="searchBtn" class="btn btn-outline-primary m-1">
+            <i class="fas fa-spinner fa-spin d-none"></i>
+            <i class="fa fa-search "></i>
+            <span class="translation" key="btn_search"></span>
+          </button>
+        </div>
+        <div class="p-2 bd-highlight">
+          <button id="addBtn" class="btn btn-outline-success m-1">
+            <i class="fas fa-spinner fa-spin d-none"></i>
+            <i class="fa fa-plus "></i>
+            <span class="translation" key="btn_add"></span>
+          </button>
+          <button id="exportBtn" class="btn btn-outline-dark m-1">
+            <i class="fas fa-spinner fa-spin d-none"></i>
+            <i class="fa fa-file-excel-o "></i>
+            <span class="translation" key="btn_export"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="m-3 bg-light rounded-3">
+    <div class="row g-3 m-3">
+      <table id="example" class="table table-hover" style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+                <td><button>asd</button></td>
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>2011/07/25</td>
+                <td>$170,750</td>
+                <td><button>asd</button></td>
+            </tr>
+            <tr>
+                <td>Ashton Cox</td>
+                <td>Junior Technical Author</td>
+                <td>San Francisco</td>
+                <td>66</td>
+                <td>2009/01/12</td>
+                <td>$86,000</td>
+                <td><button>asd</button></td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+                <th>Action</th>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+  </div>
+
+
+</body>
+  <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="../../assets/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+  <script src="../../assets/js/bootstrap-table.min.js"></script>
+  <script src="../../js/config.js"></script>
+  <script src="../../js/common.js"></script>
+  <script src="../../js/pages/department.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('#example').DataTable();
+});
+  </script>
+</body>
+</html>

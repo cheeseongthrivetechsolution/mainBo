@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ultraflex</title>
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="assets/img/favicon.png" />
+  <script src="../assets/js/jquery.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+  <div class="login">
+    <div class="translateBox">
+      <div class="translateContainer">
+        <button class="translateBtn"><span class="translation opacity-40" key="index_language"></span></button>
+        <div class="translate-content">
+          <li id="zh_translator">
+            <img src="assets/img/index/zh.png">
+            中文
+          </a>
+          <li id="en_translator">
+            <img src="assets/img/index/en.png">
+            English
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="login-form text-center text-white p-7">
+      <div class="login-signin">
+        <div class="mb-20">
+          <h3 class="opacity-40 font-weight-normal"><span class="translation" key="index_form_title"></span></h3>
+          <p class="opacity-40"><span class="translation" key="index_form_title_2"></span></p>
+        </div>
+        <form name='loginForm' method="POST" accept-charset="utf-8" class="form">
+          <div class="form-group">
+            <input class="form-control h-auto text-white bg-white-o-5 rounded-pill border-0 py-4 px-8 translation" type="text" placeholder="" key="index_form_username" name="username" autocomplete="off" />
+            <span class="usernameErr errorMsg translation" key="index_form_usernameErr"></span>
+          </div>
+          <div class="form-group">
+            <input class="form-control h-auto text-white bg-white-o-5 rounded-pill border-0 py-4 px-8 translation" type="password" placeholder="" key="index_form_password" name="password" />
+            <span class="passwordErr errorMsg translation" key="index_form_passwordErr"></span>
+          </div>
+          <div class="form-group d-flex flex-wrap justify-content-between align-items-center px-8 opacity-60"></div>
+          <div class="form-group text-center mt-10">
+            <button type="submit" data-sitekey="6LdCK1cfAAAAAMOE5IERDc-ri5oKDsj3BDRXPdQm" data-callback='onSubmit' name="submit" class="g-recaptcha btn btn-pill btn-primary opacity-90 px-15 py-3">
+              <span class="translation" key="index_form_button_signin"></span>
+            </button>
+          </div>
+        </form>
+        <div>
+          <br>
+          <h6 style="display:inline"><span class="translation" key="index_form_suggest"></span></h6>
+          <ul style="display:inline">
+            <li style="display:inline"><img src="assets/img/index/chrome.png"></li>
+            <li style="display:inline"><img src="assets/img/index/ff.png"></li>
+            <li style="display:inline"><img src="assets/img/index/ie.png"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../../assets/js/bootstrap-datetimepicker.min.js"></script>
+<script src="../../assets/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript" src="js/config.js" ></script>
+<script type="text/javascript" src="js/common.js" ></script>
+<script type="text/javascript" src="js/index.js" ></script>
+</html>
